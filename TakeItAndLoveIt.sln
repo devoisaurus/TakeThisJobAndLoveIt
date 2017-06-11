@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeItAndLoveIt", "TakeItAndLoveIt\TakeItAndLoveIt.csproj", "{5159212E-43BB-4CCD-8415-7B5C433597BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeItAndLoveIt.Tests", "TakeItAndLoveIt.Tests\TakeItAndLoveIt.Tests.csproj", "{B58412C3-BCCB-42BD-831E-E907F53EAEF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5159212E-43BB-4CCD-8415-7B5C433597BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5159212E-43BB-4CCD-8415-7B5C433597BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5159212E-43BB-4CCD-8415-7B5C433597BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5159212E-43BB-4CCD-8415-7B5C433597BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58412C3-BCCB-42BD-831E-E907F53EAEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58412C3-BCCB-42BD-831E-E907F53EAEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58412C3-BCCB-42BD-831E-E907F53EAEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58412C3-BCCB-42BD-831E-E907F53EAEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
