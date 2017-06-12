@@ -32,7 +32,11 @@ namespace TakeItAndLoveIt
                     "~/Scripts/angular-route.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                    "~/app/app.js"));
+                    "~/app/app.js",
+                    "~/app/addController.js",
+                    "~/app/detailController.js",
+                    "~/app/homeController.js",
+                    "~/app/listController.js"));
         }
     }
 }
