@@ -1,5 +1,5 @@
-﻿app.controller("listController", listController);
+﻿app.controller("listController",
+    function listController($scope) {
+        $scope.welcome = "List Controller detected, proceed";
 
-function listController($scope) {
-    $scope.welcome = "List Controller detected, proceed";
-}
+    });
