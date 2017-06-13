@@ -7,13 +7,13 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace TakeItAndLoveIt.Models
 {
-    public class UserModel : IdentityUser
+    public class UserModel
     {
         [Key]
         public int UserId { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public override string Email { get; set; }
+        public string Email { get; set; }
         public string Name { get; set; }
         public List<Company> Companies;
     }
