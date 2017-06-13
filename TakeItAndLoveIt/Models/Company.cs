@@ -9,7 +9,7 @@ namespace TakeItAndLoveIt.Models
     public class Company
     {
         [Key]
-        public string CompanyId { get; set; }
+        public int CompanyId { get; set; }
         public string CompanyName { get; set; }
         public string PrimaryContact { get; set; }
         public string PrimaryContactEmail { get; set; }

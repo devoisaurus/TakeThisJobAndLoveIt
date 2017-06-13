@@ -9,10 +9,10 @@ namespace TakeItAndLoveIt.DAL
 {
     public class AppContext : DbContext
     {
-        public AppContext() : base("TakeItLoveIt") { }
+        //public AppContext() : base("TakeItLoveIt") { }
 
-        public DbSet<UserModel> Users;
-        public DbSet<Company> Companies;
-        public DbSet<Interaction> Interactions;
+        public virtual DbSet<UserModel> Users { get; set; }
+        public virtual DbSet<Company> Companies { get; set; }
+        public virtual DbSet<Interaction> Interactions { get; set; }
     }
 }
