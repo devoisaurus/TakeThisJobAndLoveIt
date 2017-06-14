@@ -36,7 +36,8 @@ namespace TakeItAndLoveIt
                     "~/app/addController.js",
                     "~/app/detailController.js",
                     "~/app/homeController.js",
-                    "~/app/listController.js"));
+                    "~/app/listController.js",
+                    "~/app/loginController.js"));
         }
     }
 }
