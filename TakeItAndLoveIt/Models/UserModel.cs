@@ -15,6 +15,8 @@ namespace TakeItAndLoveIt.Models
         public string Password { get; set; }
         public string Email { get; set; }
         public string Name { get; set; }
+
+
         public List<Company> Companies;
     }
 }
