@@ -2,19 +2,19 @@
 
 <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Name" ng-model="company.name"/>
+    <input type="text" class="form-control" id="name" placeholder="Name" ng-model="company.CompanyName"/>
 </div>
 <div class="form-group">
     <label for="contact">Primary Contact</label>
-    <input type="text" class="form-control" id="contact" placeholder="Contact name" ng-model="company.contact" />
+    <input type="text" class="form-control" id="contact" placeholder="Contact name" ng-model="company.PrimaryContact" />
 </div>
 <div class="form-group">
     <label for="email">Primary Contact email</label>
-    <input type="email" class="form-control" id="email" placeholder="none@no.com" ng-model="company.email" />
+    <input type="email" class="form-control" id="email" placeholder="none@no.com" ng-model="company.PrimaryContactEmail" />
 </div>
 <div class="form-group">
     <label for="phone">Primary Contact phone</label>
-    <input type="text" class="form-control" id="phone" placeholder="(555)555-5555" ng-model="company.phone" />
+    <input type="text" class="form-control" id="phone" placeholder="(555)555-5555" ng-model="company.PrimaryContactPhone" />
 </div>
 
-<button ng-click="submit(company)">Add me</button>
+<button ng-click="addCompany()">Add me</button>

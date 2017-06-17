@@ -4,6 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Mvc;
+using System.Web.UI.WebControls;
+using TakeItAndLoveIt.Models;
 
 namespace TakeItAndLoveIt.Controllers
 {
@@ -15,5 +18,15 @@ namespace TakeItAndLoveIt.Controllers
         {
             _companyRepository = companyRepository;
         }
+
+
+        [System.Web.Http.Route("api/companies")]
+        [System.Web.Http.HttpPost]
+        public void AddACompany(Company company)
+        {
+            _companyRepository.Save(company);
+           
+        }
+        
     }
 }

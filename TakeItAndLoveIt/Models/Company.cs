@@ -10,9 +10,12 @@ namespace TakeItAndLoveIt.Models
     {
         [Key]
         public int CompanyId { get; set; }
+
         public string CompanyName { get; set; }
         public string PrimaryContact { get; set; }
+        [DataType(DataType.EmailAddress)]
         public string PrimaryContactEmail { get; set; }
+        [DataType(DataType.PhoneNumber)]
         public string PrimaryContactPhone { get; set; }
 
         public List<Interaction> Interactions;

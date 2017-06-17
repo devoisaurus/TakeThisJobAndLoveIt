@@ -1,18 +1,20 @@
 ﻿app.controller("addController",
-    function addController($scope) {
+    function addController($scope, $http) {
         console.log("i'm add");
         $scope.welcome = "Add Controller detected, proceed";
 
 
         $scope.company = {
-            name: "",
-            contact: "",
-            email: "",
-            phone: ""
+            CompanyName: "",
+            PrimaryContact: "",
+            PrimaryContactEmail: "",
+            PrimaryContactPhone: ""
         };
 
-        $scope.submit = function(company) {
-            console.log(company);
+
+        $scope.addCompany = function(company) {
+            $http.post("/api/companies", $scope.company).then(function (success) { },
+                function (error) { });
         }
 
     });
