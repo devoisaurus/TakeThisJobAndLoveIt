@@ -22,6 +22,11 @@ namespace TakeItAndLoveIt.DAL
             _context.Companies.Add(newCompany);
             _context.SaveChanges();
         }
+
+        public IEnumerable<Company> GetAllCompanies()
+        {
+            return _context.Companies;
+        }
     
     }
 }

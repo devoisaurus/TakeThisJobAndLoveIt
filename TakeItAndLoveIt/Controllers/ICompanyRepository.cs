@@ -10,5 +10,6 @@ namespace TakeItAndLoveIt.Controllers
     public interface ICompanyRepository
     {
         void Save(Company newCompany);
+        IEnumerable<Company> GetAllCompanies();
     }
 }
