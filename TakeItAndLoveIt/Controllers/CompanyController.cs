@@ -27,6 +27,14 @@ namespace TakeItAndLoveIt.Controllers
             _companyRepository.Save(company);
            
         }
+
+
+        [System.Web.Http.Route("api/companies")]
+        [System.Web.Http.HttpGet]
+        public IEnumerable<Company> GetCompanies()
+        {
+            return _companyRepository.GetAllCompanies();
+        }
         
     }
 }
