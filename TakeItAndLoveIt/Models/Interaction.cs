@@ -12,8 +12,11 @@ namespace TakeItAndLoveIt.Models
         public int InteractionId { get; set; }
 
         [Required]
+        [DataType(DataType.DateTime)]
         public DateTime InteractionDate { get; set; }
+        [Required]
         public string InteractionType { get; set; }
+
         public string InteractionNotes { get; set; }
     }
 }
