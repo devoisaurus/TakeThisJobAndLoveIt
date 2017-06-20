@@ -4,11 +4,6 @@ angular.module("JobLoveApp")
     .config([
         "$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
             $routeProvider
-                .when("/detail",
-                    {
-                        templateUrl: "app/partials/details.html",
-                        controller: "detailController"
-                    })
                 .when("/add",
                     {
                         templateUrl: "app/partials/add.html",
@@ -19,10 +14,10 @@ angular.module("JobLoveApp")
                         templateUrl: "app/partials/list.html",
                         controller: "listController"
                     })
-                .when("/details",
+                .when("/detail",
                     {
                         templateUrl: "app/partials/details.html",
-                        controller: "detailsController"
+                        controller: "addController"
                     })
             .when("/login",
                     {

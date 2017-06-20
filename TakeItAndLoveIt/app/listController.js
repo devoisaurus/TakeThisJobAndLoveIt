@@ -8,4 +8,8 @@
                 $scope.list = res.data;
             });
 
+        $scope.whoDis = function(company) {
+            console.log("click", company.companyId);
+        }
+
     });

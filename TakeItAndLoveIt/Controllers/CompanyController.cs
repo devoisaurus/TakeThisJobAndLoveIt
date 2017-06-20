@@ -35,6 +35,13 @@ namespace TakeItAndLoveIt.Controllers
         {
             return _companyRepository.GetAllCompanies();
         }
-        
+
+        /*[System.Web.Http.Route("api/companies")]
+        [System.Web.Http.HttpGet]
+        public void RemoveCompany(Company company)
+        {
+            
+        }*/
+
     }
 }

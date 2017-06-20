@@ -1,18 +1,19 @@
-﻿<h2>Company name</h2>
-<h6>Contact name</h6>
-<h6>Contact email</h6>
-<h6>Contact Phone</h6>
+﻿<h2>{{companies.CompanyName}}</h2>
+<span></span>
+<h6>Primary contact: {{companies.PrimaryContactName}}</h6>
+<h6>Contact email:{{companies.PrimaryContactEmail}}</h6>
+<h6>Contact Phone:{{companies.PrimaryContactPhone}}</h6>
 
-<h4>Interactions</h4>
+
 
 <h3>Add an interaction</h3>
 <div class="form-group">
     <label for="name">Date of Interaction:</label>
-    <input type="date" class="form-control" id="date" ng-model="interaction.InteractionDate" />
+    <input type="date" class="form-control" id="interactionDate" ng-model="interaction.InteractionDate" />
 </div>
 <div class="form-group">
     <label for="interactionType">Type of Interaction:</label>
-    <select name="interactionType" class="form-control" id="interactionType" ng-model="data.model" />
+    <input type="text" class="form-control" id="interactionType" placeholder="email, interview, etc." ng-model="interaction.InteractionType" />
 </div>
 <div class="form-group">
     <label for="interactionNotes">Interaction notes:</label>
