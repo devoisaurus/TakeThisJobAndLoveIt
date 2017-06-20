@@ -12,4 +12,12 @@
             console.log("click", company.companyId);
         }
 
+        $scope.deleteMe = function (company) {
+            $http.delete("/api/companies", $scope.company)
+                .then(function (success) {
+                        $location.path("/list");
+                    },
+                    function (error) { });
+        }
+
     });

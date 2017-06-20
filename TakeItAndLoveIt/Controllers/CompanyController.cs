@@ -28,7 +28,6 @@ namespace TakeItAndLoveIt.Controllers
            
         }
 
-
         [System.Web.Http.Route("api/companies")]
         [System.Web.Http.HttpGet]
         public IEnumerable<Company> GetCompanies()
@@ -36,12 +35,11 @@ namespace TakeItAndLoveIt.Controllers
             return _companyRepository.GetAllCompanies();
         }
 
-        /*[System.Web.Http.Route("api/companies")]
+        [System.Web.Http.Route("api/companies/{id}")]
         [System.Web.Http.HttpGet]
-        public void RemoveCompany(Company company)
+        public void GetACompany(int id)
         {
-            
-        }*/
-
+            _companyRepository.GetOneCompany(id);
+        }
     }
 }

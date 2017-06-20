@@ -28,11 +28,10 @@ namespace TakeItAndLoveIt.DAL
             return _context.Companies;
         }
 
-        /*public void Remove(Company selectedCompany)
+
+        public Company GetOneCompany(int id)
         {
-            _context.Companies.Remove(selectedCompany);
-            _context.SaveChanges();
-        }*/
-    
+            return _context.Companies.Find(id);
+        }
     }
 }
