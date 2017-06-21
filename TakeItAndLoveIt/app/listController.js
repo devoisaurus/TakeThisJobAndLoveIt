@@ -9,7 +9,7 @@
             });
 
         $scope.detailView = function(company) {
-            $http.get("/api/companies" + company.companyId)
+            $http.get("/api/companies/" + company.companyId)
             .then(function(success) {
                     $location.path("/detail");
 
