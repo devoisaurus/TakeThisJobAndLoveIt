@@ -8,8 +8,12 @@
                 $scope.list = res.data;
             });
 
-        $scope.whoDis = function(company) {
-            console.log("click", company.companyId);
+        $scope.detailView = function(company) {
+            $http.get("/api/companies" + company.companyId)
+            .then(function(success) {
+                    $location.path("/detail");
+
+                })
         }
 
         $scope.deleteMe = function (company) {
