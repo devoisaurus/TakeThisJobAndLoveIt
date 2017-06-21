@@ -12,5 +12,6 @@ namespace TakeItAndLoveIt.Controllers
         void Save(Company newCompany);
         IEnumerable<Company> GetAllCompanies();
         Company GetOneCompany(int id);
+        void Delete(Company selectedCompany);
     }
 }

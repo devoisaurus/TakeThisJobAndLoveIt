@@ -37,9 +37,19 @@ namespace TakeItAndLoveIt.Controllers
 
         [System.Web.Http.Route("api/companies/{id}")]
         [System.Web.Http.HttpGet]
-        public void GetACompany(int id)
+        public IHttpActionResult GetACompany(int id)
         {
-            _companyRepository.GetOneCompany(id);
+            return Ok(_companyRepository.GetOneCompany(id));
         }
+
+        [System.Web.Http.Route("api/companies/{id}")]
+        [System.Web.Http.HttpDelete]
+        public void DeleteACompany(int id)
+        {
+            var selectedCompany =_companyRepository.GetOneCompany(id);
+            _companyRepository.Delete(selectedCompany);
+        }
+
+
     }
 }

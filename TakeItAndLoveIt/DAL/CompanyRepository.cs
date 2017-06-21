@@ -33,5 +33,11 @@ namespace TakeItAndLoveIt.DAL
         {
             return _context.Companies.Find(id);
         }
+
+        public void Delete(Company selectedCompany)
+        {
+            _context.Companies.Remove(selectedCompany);
+            _context.SaveChanges();
+        }
     }
 }
