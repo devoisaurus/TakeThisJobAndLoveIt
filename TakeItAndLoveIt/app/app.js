@@ -19,6 +19,11 @@ angular.module("JobLoveApp")
                         templateUrl: "app/partials/details.html",
                         controller: "addController"
                     })
+                .when("/detail/:id",
+                    {
+                        templateUrl: "app/partials/details.html",
+                        controller: "detailController"
+                    })
             .when("/login",
                     {
                         templateUrl: "app/partials/login.html",

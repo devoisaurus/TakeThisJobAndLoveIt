@@ -18,5 +18,7 @@ namespace TakeItAndLoveIt.Models
         public string InteractionType { get; set; }
 
         public string InteractionNotes { get; set; }
+
+        public virtual Company Company { get; set; }
     }
 }

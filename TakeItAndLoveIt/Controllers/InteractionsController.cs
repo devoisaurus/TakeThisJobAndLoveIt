@@ -11,27 +11,32 @@ namespace TakeItAndLoveIt.Controllers
     public class InteractionsController : ApiController
     {
        readonly IInteractionsRepository _interactionsRepository;
+       readonly ICompanyRepository _companyRepository;
 
-        public InteractionsController(IInteractionsRepository interactionsRepository)
+        public InteractionsController(IInteractionsRepository interactionsRepository, ICompanyRepository companyRepository)
         {
             _interactionsRepository = interactionsRepository;
+            _companyRepository = companyRepository;
         }
 
 
-        [System.Web.Http.Route("api/interactions")]
+        [System.Web.Http.Route("api/companies/{id}/interactions")]
         [System.Web.Http.HttpPost]
-        public void AddACompany(Interaction interaction)
+        public void AddACompany(int id, Interaction interaction)
         {
+            var company = _companyRepository.GetOneCompany(id);
+            interaction.Company = company;
             _interactionsRepository.Save(interaction);
 
         }
 
 
-        [System.Web.Http.Route("api/interactions")]
+        [System.Web.Http.Route("api/companies/{id}/interactions")]
         [System.Web.Http.HttpGet]
-        public IEnumerable<Interaction> GetInteractions()
+        public IEnumerable<Interaction> GetInteractions(int id)
         {
-            return _interactionsRepository.GetAllInteractions();
+            var company = _companyRepository.GetOneCompany(id);
+            return company.Interactions;
         }
     }
 }

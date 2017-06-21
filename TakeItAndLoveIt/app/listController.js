@@ -8,12 +8,9 @@
                 $scope.list = res.data;
             });
 
-        $scope.detailView = function(company) {
-            $http.get("/api/companies/" + company.companyId)
-            .then(function(success) {
-                    $location.path("/detail");
+        $scope.detailView = function (company) {
+            $location.path("/detail/" + company.companyId);
 
-                })
         }
 
         $scope.deleteMe = function (company) {

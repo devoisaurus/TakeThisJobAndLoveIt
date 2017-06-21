@@ -27,14 +27,6 @@
                 function (error) { });
         }
 
-        $scope.addInteraction = function(interaction) {
-            $http.post("/api/interactions", $scope.interaction)
-                .then(function(success) {
-                        console.log("i did the thing");
-                    },
-                    function(error) {
-                        console.log("I did not do the thing");
-                    });
-        }
+
 
     });

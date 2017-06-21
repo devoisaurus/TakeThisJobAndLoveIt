@@ -1,10 +1,11 @@
-﻿<h2>{{companies.CompanyName}}</h2>
+﻿<h2>{{companies.companyName}}</h2>
 <span></span>
-<h6>Primary contact: {{companies.PrimaryContactName}}</h6>
-<h6>Contact email:{{companies.PrimaryContactEmail}}</h6>
-<h6>Contact Phone:{{companies.PrimaryContactPhone}}</h6>
+<h6>Primary contact: {{companies.primaryContactName}}</h6>
+<h6>Contact email:{{companies.primaryContactEmail}}</h6>
+<h6>Contact Phone:{{companies.primaryContactPhone}}</h6>
 
-
+<h2>Interactions</h2>
+<li ng-repeat="interaction in interactionList"></li>
 
 <h3>Add an interaction</h3>
 <div class="form-group">
