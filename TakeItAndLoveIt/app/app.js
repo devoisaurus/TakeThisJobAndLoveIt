@@ -29,7 +29,7 @@ angular.module("JobLoveApp")
                             templateUrl: "app/partials/landing.html",
                             controller: "homeController"
                         })
-                    .when("/Home/Index",
+                    .when("Home/Index",
                         {
                             templateUrl: "app/partials/landing.html",
                             controller: "homeController"

@@ -27,3 +27,13 @@ textarea {
 .navbar {
     background-color: teal;
 }
+
+.interform {
+    background-color: transparent;
+    border-style: hidden;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border-style: inset;
+}
