@@ -263,6 +263,7 @@
     <Content Include="app\loginController.js" />
     <Content Include="app\partials\add.html" />
     <Content Include="app\partials\details.html" />
+    <Content Include="app\partials\landing.html" />
     <Content Include="app\partials\list.html" />
     <Content Include="app\partials\login.html" />
     <Content Include="Content\bootstrap.css" />
