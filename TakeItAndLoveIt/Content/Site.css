@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: lightslategray;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -36,4 +37,12 @@ textarea {
 .list-group-item {
     background-color: transparent;
     border-style: inset;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-collapse {
+    font-family: 'Pacifico', cursive;
 }
