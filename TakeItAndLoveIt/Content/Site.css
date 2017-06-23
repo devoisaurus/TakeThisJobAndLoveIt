@@ -46,3 +46,7 @@ textarea {
 .navbar-collapse {
     font-family: 'Pacifico', cursive;
 }
+
+.well {
+    background-color:transparent
+}
