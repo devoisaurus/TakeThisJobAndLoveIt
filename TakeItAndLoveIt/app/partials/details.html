@@ -5,9 +5,14 @@
 <h6>Contact Phone:{{companies.primaryContactPhone}}</h6>
 
 <h2>Interactions</h2>
-<li ng-repeat="interaction in interactionList"></li>
+<li class="list-group-item" ng-repeat="interaction in interactionList">
+    <h6>Type: {{interaction.interactionType}}</h6>
+    <h6>Date: {{interaction.InteractionDate}}</h6>
+    <h6>Notes: {{interaction.InteractionNOtes}}</h6>
+</li>
+<span></span>
 
-<h3>Add an interaction</h3>
+<button type="button" class="btn-success"> Add new interaction details</button>
 <div class="form-group">
     <label for="name">Date of Interaction:</label>
     <input type="date" class="form-control" id="interactionDate" ng-model="interaction.InteractionDate" />
