@@ -18,8 +18,8 @@
         $scope.addInteraction = function (interaction) {
             $http.post("/api/companies/" + $routeParams.id + "/interactions/", $scope.interaction)
                 .then(function (success) {
-                    console.log("i did the thing");
-                },
+                        $location.path("/detail/:id");
+                    },
                     function (error) {
                         console.log("I did not do the thing");
                     });

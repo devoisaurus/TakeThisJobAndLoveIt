@@ -5,17 +5,14 @@
 <h6>Contact Phone:{{companies.primaryContactPhone}}</h6>
 
 <h2>Interactions</h2>
-<div class="row">
-    <div class="col-lg-3">
-        <li class="list-group-item" ng-repeat="interaction in interactionList">
-            <h6>Type: {{interaction.interactionType}}</h6>
-            <h6>Date: {{interaction.interactionDate | date: 'shortDate'}}</h6>
-            <h6>Notes: {{interaction.interactionNotes}}</h6>
-        </li>
-    </div>
-</div>
-
-
+<ul class="list-inline">
+    <li class="list-group-item" ng-repeat="interaction in interactionList">
+        <h6>Type: {{interaction.interactionType}}</h6>
+        <h6>Date: {{interaction.interactionDate | date: 'shortDate'}}</h6>
+        <h6>Notes: {{interaction.interactionNotes}}</h6>
+    </li>
+</ul>
+   
 <div class="row">
     <button type="button" class="btn-primary" ng-click="reveal=true"> Add new interaction details</button> <button type="button" class="btn-warning" ng-click="reveal=false">Hide</button>
 
